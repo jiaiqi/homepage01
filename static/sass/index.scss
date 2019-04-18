@@ -1,0 +1,188 @@
+// 头部
+
+header{
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 300px;
+  // background: #2980b9;
+  background-image: linear-gradient(192deg, #43CBFF 22%, #9708CC 100%);
+  .logo{
+    position: absolute;
+    bottom: -50%;
+    img{
+      width: 80%;
+    }
+  }
+  // 导航栏
+  nav{
+    display: flex;
+    width: 100%;
+    // background-color: rgba($color: #34495e, $alpha: 0.3);
+    height: 60px;
+    box-sizing: border-box;
+    padding-right: 15%;
+    justify-content: flex-end;
+    .nav{
+      width: 100px;
+      color: #e8f5e9;
+      font-size: 18px;
+      text-align: center;
+      line-height: 60px;
+      height: 100%;
+      border-radius: 2px;
+      letter-spacing: 2px;
+      .iconfont{
+        padding-right: 2px;
+        font-size: 20px;
+      }
+    }
+    .nav:hover{
+      box-sizing: border-box;
+      color: #fff;
+      margin:10px 0;
+      font-size: 20px;
+    }
+  }
+  // 首页正中间title部分
+
+//   .blur {    
+//    /* Safari for macOS & iOS */
+//     -webkit-backdrop-filter: blur(15px); 
+
+//    /* Google Chrome */
+//     backdrop-filter: blur(15px); 
+
+//    /* 设置背景半透明黑色 */
+//     background: rgba(0, 0, 0, 0.8);
+// }
+
+  .title{
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 30%;
+    left: 50%;
+    bottom: -40px;
+    margin-left: -15%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #2962ff, $alpha: 0.6);
+    box-shadow: #43CBFF 2px 10px 20px;
+    border-radius: 10px;
+    .avatarBox{
+      width:100px;
+      height: 100px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 50%;
+      .avatar{
+        width: 80px;
+      }
+    }
+    h1{
+      font-size: 24px;
+      color: #fff;
+      line-height: 40px;
+      letter-spacing: 2px;
+      
+    }
+    h2{
+      font-size: 20px;
+      color: #fff;
+      line-height: 40px;
+    }
+  }
+}
+
+// 内容
+section{
+  display: flex;
+  box-sizing: border-box;
+  margin: 0 20px;
+  position: relative;
+  justify-content: space-around;
+  margin-top: 150px;
+  flex-wrap: wrap;
+  .showTit{
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: -10px;
+    left: 100px;
+    line-height:40px;
+  }
+  .mainContent{
+    width: 400px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    box-shadow: #2962ff 2px 5px 2px 5px;
+    border-radius: 10px;
+    
+    .showLittleTit{
+      font-size: 20px;
+      flex-wrap: wrap;
+      position: absolute;
+      line-height: 40px;
+      font-weight: 600;
+      bottom: 0;
+    }
+    .showImg{
+      width: 300px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+
+      .swiper-wrapper{
+        width: 300px;
+        height: 350px;
+        position: relative;
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 180px;
+          height: 320px;
+          border-radius: 10px;
+          border: 2px solid #666;
+          box-shadow: #666 2px 2px 2px;
+        }
+      }
+    }
+    
+  }
+  
+}
+
+// 底部
+footer{
+  width: 100%;
+  height: 200px;
+  background-color: #2962ff;
+  margin-top: 200px;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .footTop{
+    line-height: 40px;
+    font-size: 20px;
+  }
+  .footCenter{
+    line-height: 80px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HomePage</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1150572_odad07kynqm.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+  </head>
+  <body>
+    <header>
+      <!-- <div class="logo">
+        <img src="./img/logo.png" alt="logo" />
+      </div> -->
+      <nav>
+        <a href="./index.html" target="_blank" class="nav"><i class="iconfont icon-homepage"></i>首页</a>
+        <a href="##" target="_blank" class="nav"><i class="iconfont icon-barrage"></i>作品</a>
+        <a href="https://jiaiqi.github.io/" target="_blank" class="nav"><i class="iconfont icon-brush"></i>博客</a>
+      </nav>
+      <div class="title blur">
+        <div class="avatarBox">
+            <img src="./img/avatar.png" alt="头像" class="avatar">
+        </div>
+        <h1>记录点滴创意</h1>
+        <h2>欢迎来访</h2>
+      </div>
+    </header>
+    <section>
+      <h1 class="showTit">近期作品展示:</h1>
+      <div class="mainContent">        
+        <p class="showLittleTit">京东到家</p>
+        <div class="showImg">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(./img/jddj/j01.png)"></div>
+                <div class="swiper-slide" style="background-image:url(./img/jddj/j02.png)"></div>
+                <div class="swiper-slide" style="background-image:url(./img/jddj/j03.png)"></div>
+                <div class="swiper-slide" style="background-image:url(./img/jddj/j04.png)"></div>
+                <div class="swiper-slide" style="background-image:url(./img/jddj/j05.png)"></div>
+                <div class="swiper-slide" style="background-image:url(./img/jddj/j06.png)"></div>
+                <div class="swiper-slide" style="background-image:url(./img/jddj/j07.png)"></div>
+                <div class="swiper-slide" style="background-image:url(./img/jddj/j08.png)"></div>
+                <div class="swiper-slide" style="background-image:url(./img/jddj/j09.png)"></div>
+                <div class="swiper-slide" style="background-image:url(./img/jddj/j10.png)"></div>
+            </div>
+        </div>
+      </div>
+      <div class="mainContent">        
+          <p class="showLittleTit">京东到家</p>
+          <div class="showImg">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image:url(./img/jddj/j01.png)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/jddj/j02.png)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/jddj/j03.png)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/jddj/j04.png)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/jddj/j05.png)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/jddj/j06.png)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/jddj/j07.png)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/jddj/j08.png)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/jddj/j09.png)"></div>
+                  <div class="swiper-slide" style="background-image:url(./img/jddj/j10.png)"></div>
+              </div>
+          </div>
+        </div>
+    </section>
+    <footer>
+      <p class="footTop">© 2019  BETA 0.1 by Jiaqi  All Right Reserved. </p>
+      <p class="footCenter">联系我们 - <a href="mailto:jiaqi3240@163.com" style="color:#fff;font-size: 16px;">发送邮件</p>
+    </footer>
+  </body>
+</html>
+<script src="./js/swiper.min.js"></script>
+
+<script>
+    var swiper = new Swiper('.showImg', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+    });
+  </script>
